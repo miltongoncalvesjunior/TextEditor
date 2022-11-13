@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bR2hX0QbO+LMXmg2V2v9eLyzdRX6lw2FYxUdoPBUgWqrbXjsUVrH5yDWf4Mg39+gE941KwEAUsvmCgAlEreNIA==",
+  "dgSpecHash": "JMnaNd9n9aHWN5G4rUAfLGDA2LVM5/CwhwkKdvKA2Bizc3Nn9Jenygtr/87Vqv0RxEI4ej87NVuVuoC55H4YZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\milton.goncalves01\\Dev\\TextEditor\\TextEditor.csproj",
+  "projectFilePath": "C:\\Dev\\TextEditor\\TextEditor.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
