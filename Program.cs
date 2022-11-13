@@ -35,7 +35,7 @@ namespace TextEditor
 
             Console.Clear();
             Console.WriteLine("Digite seu texto abaixo (ESC para sair)");
-            Console.WriteLine("-----------------");
+            Console.WriteLine("--------------------------");
             string text = "";
 
             do
