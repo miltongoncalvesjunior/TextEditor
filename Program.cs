@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace TextEditor
 {
@@ -35,7 +36,7 @@ namespace TextEditor
 
             Console.Clear();
             Console.WriteLine("Digite seu texto abaixo (ESC para sair)");
-            Console.WriteLine("-----------------");
+            Console.WriteLine("-------------------");
             string text = "";
 
             do
@@ -48,5 +49,20 @@ namespace TextEditor
 
             Console.Write(text);
         }
+
+        static void Salvar(string text)
+        {
+            Console.Clear();
+            Console.WriteLine("Qual o caminho para salvar o arquivo?");
+            var path = Console.ReadLine();
+
+            using (var file = new StreamWriter(path))
+            {
+                file.Write(text);
+
+            }
+
+        }
+
     }
 }
