@@ -29,7 +29,25 @@ namespace TextEditor
             }
         }
 
-        static void Abrir() { }
+        static void Abrir()
+        {
+            Console.Clear();
+            Console.WriteLine("Qual caminho do arquivo?");
+            string path = Console.ReadLine();
+
+            //ler e abrir arquivos sempre utiliza o using
+
+            using (var file = new StreamReader(path))
+            {
+                //ler arquivio até o final
+                string text = file.ReadToEnd();
+                Console.WriteLine(text);
+            }
+
+            Console.WriteLine("");
+            Console.ReadLine();
+            Menu();
+        }
 
         static void Editar()
         {
